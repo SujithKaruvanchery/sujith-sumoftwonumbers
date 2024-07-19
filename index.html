@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h2>Sum of Two Input Numbers</h2>
+    Enter First Number: <input type="text" id="txtf1">
+    <br>
+    Enter Second Number: <input type="text" id="txtf2">
+    <br>
+    Result: <h4 id="result"></h4>
+    <button onclick="fun1()">Calculate</button>
+
+    <script>
+        function fun1(){
+            const fnum=document.getElementById("txtf1").value;
+            const snum=document.getElementById("txtf2").value;
+            
+            const tot= parseInt(fnum) + parseInt(snum);
+        
+            document.getElementById("result").innerHTML=tot;
+        }
+    </script>
+</body>
+</html>
